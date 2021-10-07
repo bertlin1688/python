@@ -1,5 +1,11 @@
-"""---
+
 #20211005
+def tutorialtitle(tutorial):
+    print("-"*60)
+    print(tutorial)
+    print("-"*60)
+
+tutorialtitle("Input 教學")
 a=50
 if a<50:
     print("A=",a)
@@ -37,6 +43,7 @@ print(type(123))
 print(type("test"))
 
 #資料型別轉換
+tutorialtitle("資料型別轉換")
 age2=input("請輸入你的年紀:")
 print("我是輸入後的資料",type(age2))
 age2=int(age2)
@@ -46,8 +53,9 @@ print("我是轉換成數字",type(age2))
 # 2.打開註解Ｍac command+/ , Windows ctrl+/
 
 #資料型別1
+tutorialtitle("資料型別1")
 #int整數
-print("-"*60)
+tutorialtitle("int 整數")
 a=12
 b=30
 print(a+b)
@@ -55,28 +63,28 @@ print(a*b)
 print(a/b)
 
 #float
-print("-"*60)
+tutorialtitle("float浮點數")
 c=36.145
 d=59.4096
 print(c*d)
 print(c/d)
 
 #complex
-print("-"*60)
+tutorialtitle("complex")
 e=1+2j
 f=3-4j
 print(e+f)
 print(e*f/2)
 
 #bool
-print("-"*60)
+tutorialtitle("bool布林")
 g=True
 h=False
 print(g and h)
 print(g or h)
 
 #空型別
-print("-"*60)
+tutorialtitle("空型別")
 i=None
 print(type(i))
 print(i)
@@ -88,7 +96,9 @@ print(type(g))
 print(type(i))
 
 #資料型別2
+tutorialtitle("資料型別2")
 #字串型別
+tutorialtitle("字串型別")
 name1="Bert"
 name2='Lin'
 print(name1,name2)
@@ -98,11 +108,13 @@ message="Good evening~~~~"
 print(name1,"says",message)
 
 #index取直
+tutorialtitle("index取值")
 print(name1[1]) #-->e
 print(name2[2]) #--->n
 print(name2[-1]) #--->n
 
 #字串合併
+tutorialtitle("字串合併")
 group1=name1+name2
 group2=name1+ "____"+name2
 group3=name1+("-"*5)+name2+"hihihi"
@@ -129,9 +141,11 @@ print(bigmessage)
 .replace :   以 … 替換子字串
 .find :  找尋子字串的第一個 index 值
 '''
-"""
+
 #字串常用功能
+tutorialtitle("字串常用功能")
 #.format , 字符串模板
+tutorialtitle(".format , 字符串模板")
 name1="Bert"
 message1="你好!!!"
 name2="Lin"
@@ -152,7 +166,7 @@ print(sentence1[:6])  #從頭開始取到第6個字
 print(sentence1[9:])  #從第9個字取到底
 
 #.split切割
-print("split"+ "-"*60)
+tutorialtitle("split切割")
 sentence2="五倍卷要發行了;快點預約;但是系統GG;等啊等!!"
 print(sentence2.split(";")) #切割成四個字串 ['五倍卷要發行了', '快點預約', '但是系統GG', '等啊等!!']
 print(sentence2.split("了"))
@@ -161,7 +175,7 @@ sentence3="a-b-c-ddd-e-f-g"
 print(sentence3.split("-"))
 
 #.join
-print("join"+ "-"*60)
+tutorialtitle("Join合併")
 data1=["a","b","c","d"]     #--->list陣列
 print("-".join(data1))
 print(" ** ".join(data1))
@@ -172,22 +186,20 @@ print("舊:",sentence2)
 print("新:",message3)
 
 #.strip 去除首尾空白
-print("strip"+ "-"*60)
+tutorialtitle(".strip 去除首尾空白")
 message4="   你好   ,  今天天氣如何?  "
 print("原本訊息:",message4)
 print("新訊息:",message4.strip())
 
 #.replace
-print("replace" + "-"*60)
+tutorialtitle(".replace , 取代")
 print(sentence2.replace("五","三"))
 print(sentence2.replace("五","三").replace("GG","掛掉"))
 print(sentence2.replace("五倍卷","___").replace("預約","___"))
 print(sentence2.replace("!",""))
 
 #算數運算子
-print("-"*60)
-print("運算子")
-print("-"*60)
+tutorialtitle("算數運算子")
 #專門給數值類 int / float / complex
 a=100
 b=125
@@ -230,9 +242,7 @@ message8="和".join([name5,name6])
 print(message8)
 
 #關係運算子 > , < , == , !=
-print("-"*60)
-print("關係運算子")
-print("-"*60)
+tutorialtitle("關係運算子 > , < , == , !=")
 a=30
 b=80
 c=90
@@ -246,9 +256,7 @@ print(name8=="Test")
 print(name8!="Test")
 
 #邏輯運算子 and , or ,not
-print("-"*60)
-print("邏輯運算子")
-print("-"*60)
+tutorialtitle("邏輯運算子 and , or ,not")
 print(a>10 or b <60)
 print(a>10 and b <60)
 print(a%2 ==0)
