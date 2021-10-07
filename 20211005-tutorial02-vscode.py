@@ -183,3 +183,73 @@ print(sentence2.replace("五","三"))
 print(sentence2.replace("五","三").replace("GG","掛掉"))
 print(sentence2.replace("五倍卷","___").replace("預約","___"))
 print(sentence2.replace("!",""))
+
+#算數運算子
+print("-"*60)
+print("運算子")
+print("-"*60)
+#專門給數值類 int / float / complex
+a=100
+b=125
+
+print(a+b)
+print(a*b)
+print(a/b)
+
+#指數 2的10次方
+print("指數")
+print(2**10)
+print(6**3)
+
+#整數除
+print("除整數")
+print(1944//49)
+
+#取餘數
+print("取餘數")
+print(108%100)
+print(27%4)
+print(20%4)
+
+#專門給str
+message5="你好"+"!!"+"今天天氣很好"
+print(message5)
+
+message6= "-QQ-"*20
+print(message6)
+
+name5="Bert"
+name6="Lin"
+
+#單純使用print
+print(name5,"和",name6 )
+
+message7="{} 和 {}".format(name5,name6)
+print(message7)
+message8="和".join([name5,name6])
+print(message8)
+
+#關係運算子 > , < , == , !=
+print("-"*60)
+print("關係運算子")
+print("-"*60)
+a=30
+b=80
+c=90
+print(a>b)
+print(a<b)
+print(a*3==c)
+print(a*3!=c)
+
+name8="alex"
+print(name8=="Test")
+print(name8!="Test")
+
+#邏輯運算子 and , or ,not
+print("-"*60)
+print("邏輯運算子")
+print("-"*60)
+print(a>10 or b <60)
+print(a>10 and b <60)
+print(a%2 ==0)
+print(a%2 ==0 or b%2==0)
