@@ -4,82 +4,82 @@ def tutorialtitle(tutorial):
     print(tutorial)
     print("-"*60)
 
-# #IF判斷式
-# tutorialtitle("IF判斷式")
-# a=10
-# b=20
-# if a>b:
-#     print("Ａ>B")
-#     print("A比較大")
-# else:
-#     print("B>A")
-#     print("B比較大")
+#IF判斷式
+tutorialtitle("IF判斷式")
+a=10
+b=20
+if a>b:
+    print("Ａ>B")
+    print("A比較大")
+else:
+    print("B>A")
+    print("B比較大")
 
-# if-elif-else
-# x=20
-# if x>0:
-#     print("X是正數")
-# elif x==0:
-#     print("X是0")
-# else:
-#     print("X是負數")
+if-elif-else
+x=20
+if x>0:
+    print("X是正數")
+elif x==0:
+    print("X是0")
+else:
+    print("X是負數")
 
-# #如果A是偶數分配到A組,如果是奇數分配到B組
-# tutorialtitle("如果A是偶數分配到A組,如果是奇數分配到B組")
-# a=20
-# print("A is:",a)
-# if a%2==0:
-#     print(a,"是偶數")
-#     print("A組")
-# else:
-#     print(a, "是奇數")
-#     print("B組")
+#如果A是偶數分配到A組,如果是奇數分配到B組
+tutorialtitle("如果A是偶數分配到A組,如果是奇數分配到B組")
+a=20
+print("A is:",a)
+if a%2==0:
+    print(a,"是偶數")
+    print("A組")
+else:
+    print(a, "是奇數")
+    print("B組")
 
-# #請使用者輸入數字存到變數B,如果B是偶數分配到A,基數分配到B組
-# tutorialtitle("請使用者輸入數字存到變數B,如果B是偶數分配到A,基數分配到B組")
-# b=input("請輸入B:")
-# print(type(b))
-# print("B is:",b)
-# b=int(b)
-# print(type(b))
-# if b%2==0:
-#     print(b,"是偶數")
-#     print("A組")
-# else:
-#     print(b, "是奇數")
-#     print("B組")
+#請使用者輸入數字存到變數B,如果B是偶數分配到A,基數分配到B組
+tutorialtitle("請使用者輸入數字存到變數B,如果B是偶數分配到A,基數分配到B組")
+b=input("請輸入B:")
+print(type(b))
+print("B is:",b)
+b=int(b)
+print(type(b))
+if b%2==0:
+    print(b,"是偶數")
+    print("A組")
+else:
+    print(b, "是奇數")
+    print("B組")
 
 
-# #小試身手1-1
-# tutorialtitle("小試身手1-1")
-# number=input("請輸入數字:")
-# number=int(number)
-# type_name=""
-# if number>=100:
-#     print("number is:",number)
-#     type_name="丁組"
-# elif number <100 and number >=50:
-#     print("number is:",number)
-#     type_name="丙組"
-# elif number <50 and number >=0:
-#     print("number is:",number)
-#     type_name="乙組"
-# else:
-#     print("number is:",number)
-#     type_name="甲組"
-# print("您的組別是:",type_name)
+#小試身手1-1
+tutorialtitle("小試身手1-1")
+number=input("請輸入數字:")
+number=int(number)
+type_name=""
+if number>=100:
+    print("number is:",number)
+    type_name="丁組"
+elif number <100 and number >=50:
+    print("number is:",number)
+    type_name="丙組"
+elif number <50 and number >=0:
+    print("number is:",number)
+    type_name="乙組"
+else:
+    print("number is:",number)
+    type_name="甲組"
+print("您的組別是:",type_name)
 
-# #小試身手1-2 ,曹狀if-else
-# tutorialtitle("小試身手1-2,曹狀if-else")
-# age=28
-# gender="F"
-# if gender=="F":
-#     print("您的消費金額是500")
-# else:
-#     if age>=30:
-#         print("你的消費金額是:1000")
-#     else:
-#         print("你的消費金額是700")
+#小試身手1-2 ,曹狀if-else
+tutorialtitle("小試身手1-2,曹狀if-else")
+age=28
+gender="F"
+if gender=="F":
+    print("您的消費金額是500")
+else:
+    if age>=30:
+        print("你的消費金額是:1000")
+    else:
+        print("你的消費金額是700")
 
 
 #求總和 &平均,若s不斷增加每次都要改成是太麻煩,可以改用串列
