@@ -1,9 +1,12 @@
 #20211012
+import os
 def tutorialtitle(tutorial):
     print("-"*60)
     print(tutorial)
     print("-"*60)
 
+os.system("clear")
+#關係運算子
 tutorialtitle("關係運算子")
 print("list")
 students=["AA","Bert","chen","Wang","TT"]
@@ -28,6 +31,7 @@ print("is" in message3)
 print("abc" in message3)
 print("oo" in message3)
 
+#小試身手2-1
 tutorialtitle("小試身手2-1")
 #a
 names=["Jeff","Leo","Keven","Lisa","Matty"]
@@ -52,6 +56,7 @@ message4={
     "Matty":100,
 }
 
+#小試身手2-2
 tutorialtitle("小試身手2-2")
 #a
 data2={
@@ -74,7 +79,9 @@ print(data2["interest"])
 data2["interest"].append("彈吉他")
 print(data2["interest"])
 
+
 #dist in list 
+tutorialtitle("dist in list")
 data3=[
     {"name":"Jeff","no":1,"math":100,"eng":87},
     {"name":"Leo","no":2,"math":97,"eng":89},
@@ -152,8 +159,9 @@ for ty in data6:
 
 #小試身手3-1
 #1+2+3+.....+100 總和
+tutorialtitle("小試身手3-1,1+2+3+.....+100 總和")
 total=0
-for i in range(1,101):
+for i in range(1,11):
     total=total+i
     print("i = ",i,"目前總和:",total)
 
@@ -166,6 +174,7 @@ for i in range(1,101):
 # ***
 # **
 # *
+tutorialtitle("小試身手3-1,*列印")
 
 print("-"*60)
 for i in range(6,0,-1):
@@ -180,4 +189,25 @@ for i in range(1,7):
     y=x-i
     print("*"*y)
 
+#小試身手3-1
+# 有一變數 name=“Jack!” , 試撰寫一程式 , 列印出下列訊息
+#         JJJJJ
+#         aaaa
+#         ccc
+#         kk
+#         !
+tutorialtitle("小試身手3-1,有一變數 name=“Jack!” , 試撰寫一程式 , 列印出下列訊息")
+name="Jack!"
+count=len(name)
+print("字串總長度:{}".format(count))
+for i in name:
+    print(i*count)
+    count=count-1
+
+#小試身手3-2,大樂透 01~49 可重複地抽6號碼
+tutorialtitle("小試身手3-2,大樂透 01~49 可重複地抽6號碼")
+import random
+for i in range(6):
+    i=i+1
+    print("number{} is:{}".format(i,random.randint(1,50)))
    
